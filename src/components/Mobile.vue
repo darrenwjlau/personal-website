@@ -15,6 +15,7 @@
             </div>
             <br>
         </div>
+</div>
     </div>
    
     <h2 style="color: white;">Tech gadgets that I own</h2>
