@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 export const useTechItems = defineStore('TechItemsStore', {
     state: () => ({
       item: [
-        { name: 'Space Travel', type: 'Wireless Earbuds 🎧', maker: 'Moondrop', img: 'moondrop_space_travel.png' },
         { name: 'Waner', type: 'Wired Earbuds 🎧', maker: 'Tangzu', img: 'tangzu_waner.png' },
         { name: 'Redmi 13C', type: 'Phone 📱', maker: 'Xiaomi', img: 'xiaomi_redmi_13c.png' }
       ]
