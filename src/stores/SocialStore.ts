@@ -7,7 +7,7 @@ export const useSocialStore = defineStore('SocialStore', {
       item: [
         [
             { link: 'https://discordapp.com/users/718622831788949575', img: 'discord.ico' },
-            { link: 'https://github.com/mickeydarrenlau', img: 'github.png' },
+            { link: 'https://github.com/darrenwjlau', img: 'github.png' },
             { link: 'https://www.instagram.com/mickeydarrenlau/', img: 'instagram.ico' },
             { link: 'https://www.reddit.com/user/RoundAccident3943', img: 'reddit.png'},
             { link: 'mailto:darrenwjlau@gmail.com', img: 'gmail.png' }
