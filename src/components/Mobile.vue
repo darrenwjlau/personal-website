@@ -16,50 +16,7 @@
             <br>
         </div>
     </div>
-    <h1 style="color: white;">Here's what am I listening to currently</h1>
-    <div class="wrapper" style="display: flex;">
-        <div class="left">
-        <BCard
-            :title="PresenceStore.devicename"
-            :img-src="PresenceStore.songimg"
-            :img-alt="PresenceStore.songname"
-            style=" background-color: black; color: white;"
-            
-        >
-            <BCardText>
-                <h1 style="color:white;"> {{ textls(PresenceStore.songname) }} </h1>
-                
-            </BCardText>
-        
-    </BCard>
-            </div>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <div class="right">
-        
-                <h1 style="color: white;">Playback History</h1>
-                <BTable show-empty :items="PresenceStore.play_history" style="" :fields="TableFieldStore.songs_field" :table-class="'table-dark .th-lg'" responsive>
-                <template #cell(songimg)="row">
-                    <img :alt="row.item.songname" :src="row.value" style="width: 70px; height: 70px;">
-                </template>
-                <template #cell(songname)="row">
-                    {{row.value}} 
-                </template>
-                <template #cell(artistname)="row">
-                    {{textl(row.value)}}
-                </template>
-                <template #cell(devicename)="row">
-                    {{row.value}}
-                </template>
-                <template v-slot:empty>
-                    <h1 style="font-style: bold; color: white;">No songs played yet!</h1>
-                </template>
-                
-            </BTable>
-            </div>
-
-    </div>
+   
     <h2 style="color: white;">Tech gadgets that I own</h2>
     <BTable show-empty :items="TechItems.items" style="width: 95%" :fields="TableFieldStore.tech_field" :table-class="'table-dark .th-lg'" responsive>
         <template #cell(img)="row">
