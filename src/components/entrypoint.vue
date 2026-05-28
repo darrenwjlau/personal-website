@@ -1,6 +1,6 @@
 <template>
  <template v-if="isMobile">
-    <Mobile />
+    <Desktop />
   </template>
   <template v-else>
     <Desktop />
