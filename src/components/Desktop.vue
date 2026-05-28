@@ -54,6 +54,7 @@ onMounted(async () => {
 
     const reposResponse = await fetch('https://api.github.com/users/Darren-project/repos');
     repos.value = await reposResponse.json();
+    alert("HI")
 
     
                
