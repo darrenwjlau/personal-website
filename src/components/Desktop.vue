@@ -22,6 +22,8 @@
                     <img :alt="row.item.name" :src="row.value" style="width:100px; height: 100px;">
                 </template>
     </BTable>
+            </BCol>
+        <BCol>
     <h2 style="color: white;">Projects</h2>
     <BTable show-empty :items="repos" style="width: 95%" :fields="TableFieldStore.repos_field" :table-class="'table-dark .th-lg'" responsive>
         <template #cell(html_url)="row">
